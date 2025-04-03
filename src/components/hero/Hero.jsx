@@ -10,7 +10,7 @@ function Hero() {
         <div class="flex ">
                 <div class="flex-col">
             <h1 class="text-6xl px-20 py-5 font-bold">Find the top</h1>
-            <span class="text-6xl px-20 font-bold">Hotel  nearby </span>
+            <span class="text-6xl px-20 font-bold">Hotel nearby </span>
             <p class="p-10 opacity-75 text-xl">We bring you not only a stay option, but an experience in your budget to enjoy the luxury.</p>
             <div class="flex p-5 gap-5">
         <button class="bg-blue-300 text-blue-800 bg-opacity-75 hover:bg-blue-800 hover:text-white px-6 py-3 " > Discover Now </button>

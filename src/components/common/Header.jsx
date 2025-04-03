@@ -30,13 +30,11 @@ function Header() {
                         <a href="#listings">
                             <ul class="flex items-center"> Listings<IoIosArrowDown size="15" /></ul>
                         </a>
-                        <div className="list-none border-none bg-white p-6 text-gray-600 shadow-lg w-60  
-          absolute hidden group-hover:flex flex-col">
+                   <div className="list-none border-none bg-white p-6 text-gray-600 shadow-lg w-60 absolute hidden group-hover:flex flex-col">
                             <li className="list-none flex justify-between hover:bg-sky-50">Hotel <HiDotsHorizontal /></li>
                             <div class="border-none relative group hover:bg-sky-50">
 
-                                <div className="list-none border-none left-50 bg-white p-6 text-gray-600 shadow-lg w-50  
-          absolute hidden group-hover:flex flex-col cursor-pointer">
+                    <div className="list-none border-none left-50 bg-white p-6 text-gray-600 shadow-lg w-50 absolute hidden group-hover:flex flex-col cursor-pointer">
                                     <li className="list-none flex justify-between hover:bg-sky-50">Hotel Home</li>
                                     <li className="list-none flex justify-between hover:bg-sky-50">Hotel Chain</li>
                                     <li className="list-none flex justify-between hover:bg-sky-50">Hotel Resort</li>
@@ -63,8 +61,7 @@ function Header() {
                         <a href="#Page">
                             <ul class="flex items-center"> Pages<IoIosArrowDown size="15" /></ul>
                         </a>
-                        <div className="list-none border-none bg-white p-6 text-gray-600 shadow-lg w-60 
-        absolute hidden group-hover:flex flex-col">
+                 <div className="list-none border-none bg-white p-6 text-gray-600 shadow-lg w-60 absolute hidden group-hover:flex flex-col">
                             <li className="list-none">About</li>
                             <li>Contact</li>
                             <li>Contact 2</li>
@@ -80,21 +77,18 @@ function Header() {
                     </div>
                     <div class=" border-none relative group cursor-pointer hover:bg-sky-50">
                         <a href="#account">
-                            <ul class="flex items-center"> Account<IoIosArrowDown size="15" /></ul>
+            <ul class="flex items-center"> Account<IoIosArrowDown size="15" /></ul>
                         </a>
-                        <div className="list-none border-none bg-white p-6 text-gray-600 rounded-lg shadow-lg w-53 
-            absolute hidden group-hover:flex flex-col">
+           <div className="list-none border-none bg-white p-6 text-gray-600 rounded-lg shadow-lg w-53 absolute hidden group-hover:flex flex-col">
                             <li className="list-none flex justify-between">User Profile <HiDotsHorizontal /></li>
                             <li class="flex justify-between">Agent Dashboard <HiDotsHorizontal /></li>
                             <li>Master Admin</li>
                         </div>
                     </div>
                 </div>
-                <div class="flex border-none relative group pt-11 pl-10 hover:bg-white 
- rounded-lg cursor-pointer ">
+                <div class="flex border-none relative group pt-11 pl-10 hover:bg-white rounded-lg cursor-pointer ">
                     <HiDotsHorizontal />
-                    <div className="list-none border-none bg-white p-2 text-gray-600 rounded-xl shadow-lg w-45 
-           h-45 absolute hidden group-hover:flex flex-col top-15">
+        <div className="list-none border-none bg-white p-2 text-gray-600 rounded-xl shadow-lg w-45 absolute hidden group-hover:flex flex-col top-15">
                         <li class="flex gap-1 hover:bg-sky-200 rounded-lg "> <MdSupport size="20" />Support </li>
                         <li class="flex gap-1 hover:bg-sky-200 rounded-lg pt-3"> <GrDocumentText size="20" />Documentation</li>
                         <hr></hr>
@@ -110,8 +104,8 @@ function Header() {
                     <a class="flex gap-1 hover:bg-sky-100 rounded-lg" href="#cab"> <FaCarAlt size="20" />Cab</a>
                 </div >
                 <div className="group relative">
-                    <div class="flex pt-11 pl-8  cursor-pointer">
-                        <IoMdNotificationsOutline />
+                    <div class="flex pt-11 pl-8 cursor-pointer">
+                       <IoMdNotificationsOutline />
                     </div>
                     <div className="absolute hidden group-hover:block border-none bg-white rounded-lg shadow-xl w-90 py-5 px-5 right-0">
                         <div class="flex ">
@@ -137,26 +131,27 @@ function Header() {
                     </div>
                 </div>
                 <div className="group relative">
-                    <img class="w-10 h-10 rounded-lg relative top-5 left-5 
+                    <img class="w-10 h-10 rounded-lg relative top-5 left-5
                 cursor-pointer " src="logo02.jpg"></img>
-        <div className="absolute hidden text-gray-700 group-hover:block border-none bg-white rounded-lg shadow-lg w-65 h-80 top-18 right-5">
+        <div className="absolute hidden text-gray-700 group-hover:block border-none bg-white rounded-lg shadow-lg w-65 h-80 top-18 right-0">
                    <img class="rounded-full w-10 h-10 relative top-5 left-5" src="logo02.jpg"></img>
-                        <span class="absolute top-5 left-20 font-bold">Lori Ferguson</span>
-                        <email class="absolute top-10 left-20 text-sm">example@gmail.com</email>
-                        <ul class="relative top-10 left-8 ">
-                            <li class="flex"> <CiBookmarkCheck size="20" />My Bookings</li>
-                            <li class="flex pt-3"><CiHeart size="20" />My Wishlist</li>
-                            <li class="flex pt-3"><CiSettings size="20" />Settings</li>
-                            <li class="flex pt-3"><IoMdHelpCircleOutline size="20" /> Help Center</li>
-                            <li class="flex pt-3"> <LiaSignOutAltSolid size="20" />Sign Out</li>
+                <span class="absolute top-5 left-20 font-bold">Lori Ferguson</span>
+            <email class="absolute top-10 left-20 text-sm">example@gmail.com</email>
+                        <div >
+                        <ul class="relative top-10 left-8 cursor-pointer">
+                         <li class="flex hover:text-blue-500 rounded-lg"> <CiBookmarkCheck size="20" />My Bookings</li>
+                    <li class="flex pt-3 hover:bg-sky-100 hover:text-blue-500 rounded-lg "><CiHeart size="20" />My Wishlist</li>
+                         <li class="flex pt-3 hover:bg-sky-100 rounded-lg"><CiSettings size="20" />Settings</li>
+                         <li class="flex pt-3 hover:bg-sky-100 rounded-lg"><IoMdHelpCircleOutline size="20" /> Help Center</li>
+                         <li class="flex pt-3 hover:bg-red-100 rounded-lg"> <LiaSignOutAltSolid size="20"/>Sign Out</li>
                         </ul>
-
-                       <div>
-             <h3 class="absolute top-60 left-8 flex gap-5 pt-10 cursor-pointer ">Mode:
-                         <IoSunnyOutline size="22" />
-                         <TbMoonStars size="20" /><FaCircleHalfStroke size="18" /></h3>  
-                       </div>
-                    
+                        </div>
+                       
+        <span class="absolute top-60 left-8 flex gap-5 pt-10 cursor-pointer ">Mode:
+                <IoSunnyOutline size="22"/>
+                <TbMoonStars size="20" />
+                <FaCircleHalfStroke size="18" /></span>
+                       
                         <div>
                         </div>
                     </div>
