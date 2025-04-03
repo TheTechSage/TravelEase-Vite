@@ -4,25 +4,30 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './components/common/Header'
 import Footer from './components/common/Footer'
-import Hero from './components/common/hero/Hero'
-import { IoLocationOutline } from "react-icons/io5";
-import { CiCalendar,CiSearch } from "react-icons/ci";
-import { FaRegUser } from "react-icons/fa6";
+import Hero from './components/hero/Hero'
+import BestHolidays from './components/BestHolidays'
+import FeaturedHotels from './components/FeaturedHotels'
 
- import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
-import { ImSpoonKnife } from "react-icons/im";
- import { LuClock11 } from "react-icons/lu";
-import { MdOutlineSecurity,MdOutlineElectricBolt } from "react-icons/md";
-import { ImStarFull } from "react-icons/im";
- import { FaStarHalfAlt ,FaHandHoldingHeart, FaHandHoldingUsd } from "react-icons/fa";
+
+// import { IoLocationOutline } from "react-icons/io5";
+// import { CiCalendar,CiSearch } from "react-icons/ci";
+// import { FaRegUser } from "react-icons/fa6";
+
+//  import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+// import { ImSpoonKnife } from "react-icons/im";
+//  import { LuClock11 } from "react-icons/lu";
+// import { MdOutlineSecurity,MdOutlineElectricBolt } from "react-icons/md";
+// import { ImStarFull } from "react-icons/im";
+//  import { FaStarHalfAlt ,FaHandHoldingHeart, FaHandHoldingUsd } from "react-icons/fa";
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    <>import
+    <div>
       <Header />
-       <div class="flex ">
+       {/* <div class="flex ">
         <div class="flex-col">
     <h1 class="text-6xl px-20 py-5 font-bold">Find the top</h1>
     <span class="text-6xl px-20 font-bold">Hotel  nearby </span>
@@ -207,10 +212,13 @@ function App() {
   <a href="#"><img  class="h-18"src="app-store-n2CVq0lh.svg"></img></a>
  </div>
 </div>
-     
-  <Hero/>
+      */}
+  <Hero />
+  <BestHolidays/>
+    <FeaturedHotels/>
 
       <Footer />
+      </div>
     </>
   )
 }
