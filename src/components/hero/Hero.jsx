@@ -15,7 +15,6 @@ export default function Hero() {
                     <div className="flex p-5 gap-5">
                 <button className="bg-blue-300 text-blue-800 bg-opacity-75 hover:bg-blue-800 hover:text-white px-6 py-3 " > Discover Now </button>
                       <img className="rounded-full h-13" src="12-Fg48wljI.jpg"></img>
-                      
                       <FaPlay />
                       <p>Watch Our Story</p>
                     </div>
@@ -50,8 +49,6 @@ export default function Hero() {
     
       </div>
       </div>
-                    
-                
         </>
     )
 }
