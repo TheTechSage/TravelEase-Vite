@@ -4,24 +4,24 @@ import { FaFacebookSquare ,FaInstagram ,FaCar,FaGlobeAsia, FaHotel,FaTwitter ,Fa
 function Footer() {
     return (
         <>
-        <footer class=" bg-black pt-8 ">
-        <div class="container flex gap-20 pl-15 pr-15">
-            <div class="flex flex-col text-white">
-                <div class="pl-2">
-    <img class="h-10 " src="logo-light-q8SM9mVG.svg"></img>
+        <footer className=" bg-black pt-8 ">
+        <div className="container flex gap-20 pl-15 pr-15">
+            <div className="flex flex-col text-white">
+                <div className="pl-2">
+    <img className="h-10 " src="logo-light-q8SM9mVG.svg"></img>
     </div>
-    <div class="opacity-75  ">
+    <div className="opacity-75  ">
     <p>Departure defective arranging rapturous did believe him all had supported.</p>
 </div>  
-<div class="p-2">
-    <a  class="text-white opacity-75 hover:text-blue-500 gap-2 flex"href="#"> <MdOutlinePhone size="25px"/> +1234 567 678</a>
-    <a class="=text-white opacity-75 hover:text-blue-500  gap-2 flex"href="#"><MdOutlineMailOutline  size="25px"/>example@gmail.com</a>
+<div className="p-2">
+    <a  className="text-white opacity-75 hover:text-blue-500 gap-2 flex"href="#"> <MdOutlinePhone size="25px"/> +1234 567 678</a>
+    <a className="=text-white opacity-75 hover:text-blue-500  gap-2 flex"href="#"><MdOutlineMailOutline  size="25px"/>example@gmail.com</a>
     </div>
 </div>
         <div>
-        <h5 class="text-2xl text-white mb-3">Page</h5>
-        <div class="flex flex-col" >
-        <ul class="gap-5 opacity-75">
+        <h5 className="text-2xl text-white mb-3">Page</h5>
+        <div className="flex flex-col" >
+        <ul className="gap-5 opacity-75">
             <li className="text-white hover:text-blue-500 pb-2"><a href="#">About us</a></li>
             <li className="text-white hover:text-blue-500 pb-2"><a href="#">Contact us</a></li>
             <li className="text-white  hover:text-blue-500 pb-2"><a href="#">News and blog</a></li>
@@ -30,9 +30,9 @@ function Footer() {
     </div>
     </div>
         <div>
-            <h5 class=" text-white  text-2xl mb-3">Link</h5>
+            <h5 className=" text-white  text-2xl mb-3">Link</h5>
             <div className="flex flex-col ">
-            <ul class="opacity-75">
+            <ul className="opacity-75">
                 <li className="text-white  hover:text-blue-500 pb-2"><a href="#">Signout</a></li>
                 <li className="text-white hover:text-blue-500 pb-2"><a href="#">Signin</a></li>
                 <li className="text-white  hover:text-blue-500 pb-2"><a href="#">Privacy Policy</a></li>
@@ -43,9 +43,9 @@ function Footer() {
         </div>
     </div>
     <div>
-     <h4 class="text-2xl text-white pb-3 ">Globel Site</h4>
-     <div class="flex flex-col">
-        <ul class="opacity-75">
+     <h4 className="text-2xl text-white pb-3 ">Globel Site</h4>
+     <div className="flex flex-col">
+        <ul className="opacity-75">
             <li className="text-white opacity-75 hover:text-blue-500 pb-2"><a href="#">India</a></li>
             <li className="text-white opacity-75 hover:text-blue-500 pb-2"><a href="#California">California</a></li>
             <li className="text-white hover:text-blue-500 opacity-75 pb-2"><a href="#indonasia">Indonasia</a></li>
@@ -55,9 +55,9 @@ function Footer() {
             </div>   
     </div>
 <div>
-    <h3 class="text-2xl text-white pb-3">Booking</h3>
-    <div class="flex flex-col">
-        <ul class="opacity-75 "> 
+    <h3 className="text-2xl text-white pb-3">Booking</h3>
+    <div className="flex flex-col">
+        <ul className="opacity-75 "> 
             <li className="text-white hover:text-blue-500 pb-2 gap-2 flex"><FaHotel size="20px" /><a href="#hotel">Hotel</a></li>
             <li className="text-white hover:text-blue-500 pb-2 gap-2 flex"><MdFlight size="20px" /><a href="#flight">Flight</a></li>
             <li className="text-white hover:text-blue-500 pb-2 gap-2 flex"><FaGlobeAsia  size="20px"/><a href="#tour">Tour</a></li>
@@ -67,9 +67,9 @@ function Footer() {
     </div>
     
 </div>
-<div class="section py-15 px-15 ">
-        <h5 class="text-2xl text-white pb-2">Top Links</h5>
-        <div class="flex flex-wrap gap-5 pr-15 opacity-75">
+<div className="section py-15 px-15 ">
+        <h5 className="text-2xl text-white pb-2">Top Links</h5>
+        <div className="flex flex-wrap gap-5 pr-15 opacity-75">
             <div className="text-white hover:text-blue-500 "><a href="#flight">Flight</a></div>
             <div className="text-white hover:text-blue-500"><a href="#">Hotels</a></div>
             <div className="text-white hover:text-blue-500"> <a href="#">Tour</a></div>
@@ -92,19 +92,19 @@ function Footer() {
             <div className="text-white hover:text-blue-500"><a href="#">Share Market</a></div>
         </div>
     </div>
-    <div class="flex gap-200 p-10">
+    <div className="flex gap-200 p-10">
         <div>
-            <h3 class="text-2xl text-white">Payment & Security</h3>
-            <div class="flex gap-2 py-3">
-            <img class="h-8" src="paypal-p0Cf0jrR.svg"></img>
-            <img  class="h-8"src="download.svg"></img>
-            <img  class="h-8"src="mastercard-7AdMRYoz.svg"></img>
-            <img class="h-8" src="expresscard-lzb9gcWA.svg"></img>
+            <h3 className="text-2xl text-white">Payment & Security</h3>
+            <div className="flex gap-2 py-3">
+            <img className="h-8" src="paypal-p0Cf0jrR.svg"></img>
+            <img  className="h-8"src="download.svg"></img>
+            <img  className="h-8"src="mastercard-7AdMRYoz.svg"></img>
+            <img className="h-8" src="expresscard-lzb9gcWA.svg"></img>
         </div>
         </div>
         <div>
-            <h3 class="text-2xl text-white">Follow us on</h3>
-            <div class="flex gap-3">
+            <h3 className="text-2xl text-white">Follow us on</h3>
+            <div className="flex gap-3">
          <a  href="https://facebook.com"> <FaFacebookSquare color="blue" size="30"/></a>
            <a href="https://instagram.com"><FaInstagram size="30"  color=" pink"/>
            </a> 
@@ -113,11 +113,11 @@ function Footer() {
            </div>
         </div>
          </div>
-         <div class="flex gap-100 ">
-            <div class="pl-5">
-                <h4 class=" text-white opacity-75">Copyrights ©2025 Booking. Build by StackBros</h4>
+         <div className="flex gap-100 ">
+            <div className="pl-5">
+                <h4 className=" text-white opacity-75">Copyrights ©2025 Booking. Build by StackBros</h4>
     </div>
-            <div class="right flex gap-20 opacity-75 ">
+            <div className="right flex gap-20 opacity-75 ">
                 <h2 className="text-white hover:text-blue-500"><a href="#">Privacy policy</a></h2>
                 <h2 className="text-white hover:text-blue-500"><a href="#">Terms and Conditions</a></h2>
                 <h2 className="text-white hover:text-blue-500"><a href="#">Refund policy</a></h2>

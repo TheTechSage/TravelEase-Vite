@@ -7,18 +7,18 @@ function Hero() {
     return (
         <>
         
-        <div class="flex ">
-                <div class="flex-col">
-            <h1 class="text-6xl px-20 py-5 font-bold">Find the top</h1>
-            <span class="text-6xl px-20 font-bold">Hotel nearby </span>
-            <p class="p-10 opacity-75 text-xl">We bring you not only a stay option, but an experience in your budget to enjoy the luxury.</p>
-            <div class="flex p-5 gap-5">
-        <button class="bg-blue-300 text-blue-800 bg-opacity-75 hover:bg-blue-800 hover:text-white px-6 py-3 " > Discover Now </button>
+        <div className="flex ">
+                <div className="flex-col">
+            <h1 className="text-6xl px-20 py-5 font-bold">Find the top</h1>
+            <span className="text-6xl px-20 font-bold">Hotel nearby </span>
+            <p className="p-10 opacity-75 text-xl">We bring you not only a stay option, but an experience in your budget to enjoy the luxury.</p>
+            <div className="flex p-5 gap-5">
+        <button className="bg-blue-300 text-blue-800 bg-opacity-75 hover:bg-blue-800 hover:text-white px-6 py-3 " > Discover Now </button>
               <p>Watch Our Story</p>
             </div>
             <div>
               <h2>Check Availability</h2>
-            <form class="flex border-3 border-solid  rounded-xl">
+            <form className="flex border-3 border-solid  rounded-xl">
             <IoLocationOutline size="40" /><input type="location" placeholder='Select Location'></input>
             <CiCalendar  size="40"/><input type="date-time-local"placeholder="Current time"></input>
             <FaRegUser  size="40"/><input type="text" placeholder=""></input>
