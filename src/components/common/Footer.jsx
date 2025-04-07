@@ -8,6 +8,7 @@ function Footer() {
         <div class="container flex gap-20 pl-15 pr-15">
             <div class="flex flex-col text-white">
                 <div class="pl-2">
+                    
     <img class="h-10 " src="logo-light-q8SM9mVG.svg"></img>
     </div>
     <div class="opacity-75  ">
