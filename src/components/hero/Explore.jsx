@@ -7,7 +7,7 @@ function Explore() {
                 <div className="px-20 py-20">
                     <h2 className="text-5xl font-bold text-center">Explore Nearby</h2>
 
-                    <div className=" flex flex-wrap gap-5 py-15">
+                    <div className=" flex flex-wrap gap-6 py-15">
                         <div className='flex pb-10 '>
                         <div className='flex flex-col justify-center items-center'>
                             <a className="hover:text-blue-500 text-xl text-center px-5" href="#">
