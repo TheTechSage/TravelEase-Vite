@@ -6,8 +6,8 @@ import Header from './components/common/Header'
 import Footer from './components/common/Footer'
 import Hero from './components/hero/Hero'
 import BestHolidays from './components/BestHolidays'
-import FeaturedHotels from './components/FeaturedHotels'
-
+import FeaturedHotels from './components/hero/FeaturedHotels'
+import Explore  from './components/hero/Explore'
 
 // import { IoLocationOutline } from "react-icons/io5";
 // import { CiCalendar,CiSearch } from "react-icons/ci";
@@ -216,7 +216,7 @@ function App() {
   <Hero />
   <BestHolidays/>
     <FeaturedHotels/>
-
+<Explore/>
       <Footer />
       </div>
     </>

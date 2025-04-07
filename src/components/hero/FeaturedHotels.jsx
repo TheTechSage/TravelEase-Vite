@@ -1,9 +1,19 @@
 import React from 'react'
 import { ImStarFull } from "react-icons/im";
  import { FaStarHalfAlt ,FaHandHoldingHeart, FaHandHoldingUsd } from "react-icons/fa";
-export default function FeaturedHotels() {
+ function FeaturedHotels() {
     return (
         <>
+        <div class="container">
+          <div class="p-10">
+            <h1 class="font-bold text-center text-5xl">Featured Hotels</h1>
+          </div>
+          <div class="flex px-50 py-10 gap-4 ">
+            <img class="w-60 rounded-2xl transition-transform duration-500 ease-in-out transform hover:scale-105" src="01-kkM7mXf9.jpg"></img>
+            <img class="w-60 rounded-2xl transition-transform duration-500 ease-in-out transform hover:scale-105" src="02-E_sTtfo3.jpg"></img>
+            <img  class="w-60 rounded-2xl transition-transform duration-500 ease-in-out transform hover:scale-105"src="03-B8eH2v8V.jpg"></img>
+            <img class="w-60 rounded-2xl transition-transform duration-500 ease-in-out transform hover:scale-105"src="04-SDLCq6RC.jpg"></img>
+          </div>
         <div class="flex p-20 gap-20">
     <img class="h-10 transition duration-300 ease-in-out hover:grayscale-0 grayscale" src="download (1).svg"></img>
     <img class="h-10 transition duration-300 ease-in-out hover:grayscale-0 grayscale"src="02-ja0MTAkK.svg"></img>
@@ -27,7 +37,11 @@ export default function FeaturedHotels() {
   <h5 class="font-bold">Billy Vasquez</h5>
   <span class="opacity-75">Ceo of Apple</span>
   </div>
-  </div>   
+  </div> 
+  </div>  
         </>
     )
-}
+  }
+
+    export default FeaturedHotels
+
