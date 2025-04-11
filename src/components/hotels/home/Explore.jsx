@@ -7,67 +7,67 @@ function Explore() {
                 <div className="px-20 py-20">
                     <h2 className="text-5xl font-bold text-center">Explore Nearby</h2>
 
-                    <div className=" flex flex-wrap gap-5 py-15">
+                    <div className=" flex flex-wrap gap-6 py-15 justify-center">
                         <div className='flex pb-10 '>
                         <div className='flex flex-col justify-center items-center'>
-                            <a className="hover:text-blue-500 text-xl text-center px-5" href="#">
+                            <a className="hover:text-purple-500 text-2xl text-center px-5 font-bold" href="#">
                                 <img className="rounded-full w-35" src="01-SppmAcgj (1).jpg"></img> San Francisco </a>
                             <p className="opacity-75 text-center">13 mins drive</p>
                         </div>
                         <div className='flex flex-col justify-center items-center'>
-                            <a className="hover:text-blue-500 text-xl  text-center px-5" href="#">
+                            <a className="hover:text-purple-500 text-2xl  text-center px-5 font-bold" href="#">
                                 <img className="rounded-full w-35" src="02-GRL65llU.jpg"></img> Los Angeles </a>
                             <p className="opacity-75 text-center">25 mins drive</p>
                         </div>
                         <div className='flex flex-col justify-center items-center'>
-                            <a className="hover:text-blue-500 text-xl text-center px-5" href="#">
+                            <a className="hover:text-purple-500 text-2xl text-center px-5 font-bold" href="#">
                                 <img className="rounded-full w-35" src="03-4mB89xkp.jpg"></img> Miami </a>
                             <p className="opacity-75  text-center">45 mins drive</p>
                         </div>
                         <div className='flex flex-col justify-center items-center'>
-                            <a className="hover:text-blue-500 text-xl text-center px-5" href="#">
+                            <a className="hover:text-purple-500 text-2xl text-center px-5 font-bold" href="#">
                                 <img className="rounded-full w-35" src="04-pnduE6qY.jpg"></img> Sanjosh </a>
                             <p className="opacity-75  text-center">55 mins drive</p>
                         </div>
                         <div className='flex flex-col justify-center items-center'>
-                            <a className="hover:text-blue-500 text-xl text-center px-5" href="#">
+                            <a className="hover:text-purple-500 text-2xl text-center px-5 font-bold" href="#">
                                 <img className="rounded-full w-35" src="05-2KGCHYz-.jpg"></img> New york </a>
                             <p className="opacity-75  text-center">1 hour drive</p>
                         </div>
                         <div className='flex flex-col justify-center items-center'>
-                            <a className="hover:text-blue-500 text-xl text-center px-5" href="#">
+                            <a className="hover:text-purple-500 text-2xl text-center font-bold px-5" href="#">
                                 <img className="rounded-full w-35" src="06-NVeYwMw_.jpg"></img> North Justen </a>
                             <p className="opacity-75  text-center">2 hour drive</p>
                         </div>
                         </div>
                         <div className="flex pt-10">
                         <div className='flex flex-col justify-center items-center'>
-                            <a className="hover:text-blue-500 text-xl text-center px-5" href="#">
+                            <a className="hover:text-purple-500 text-2xl text-center font-bold px-5" href="#">
                                 <img className="rounded-full w-35" src="07-cKl6NSY7.jpg"></img> Rio </a>
                             <p className="opacity-75  text-center">20 mins drive</p>
                         </div>
                         <div className='flex flex-col justify-center items-center'>
-                            <a className="hover:text-blue-500 text-xl text-center px-5 " href="#">
+                            <a className="hover:text-purple-500 text-2xl text-center font-bold px-5 " href="#">
                                 <img className="rounded-full w-35" src="08-mIVX0-EV.jpg"></img> Las Vegas </a>
                             <p className="opacity-75  text-center"> 3 hours drive</p>
                         </div>
                         <div className='flex flex-col justify-center items-center'>
-                            <a className="hover:text-blue-500 text-xl text-center px-5" href="#">
+                            <a className="hover:text-purple-500 text-2xl text-center font-bold px-5" href="#">
                                 <img className="rounded-full w-35" src="09-U3qhstmi.jpg"></img> Texas</a>
                             <p className="opacity-75  text-center"> 55 mins drive</p>
                         </div>
                         <div className='flex flex-col justify-center items-center'>
-                            <a className="hover:text-blue-500 text-xl text-center px-5" href="#">
+                            <a className="hover:text-purple-500 text-2xl text-center font-bold px-5" href="#">
                                 <img className="rounded-full w-35" src="10-wqfqgIeR.jpg"></img> Chicago </a>
                             <p className="opacity-75  text-center">  13 mins drive</p>
                         </div>
                         <div className='flex flex-col justify-center items-center'>
-                            <a className="hover:text-blue-500 text-xl text-center px-5" href="#">
+                            <a className="hover:text-purple-500 text-2xl text-center font-bold px-5" href="#">
                                 <img className="rounded-full w-35" src="11-GaBY5L70.jpg"></img>New Keagan </a>
                             <p className="opacity-75  text-center">  35 mins drive</p>
                         </div>
                         <div className='flex flex-col justify-center items-center'>
-                            <a className="hover:text-blue-500 text-xl text-center px-5" href="#">
+                            <a className="hover:text-purple-500 text-2xl text-center font-bold px-5" href="#">
                                 <img className="rounded-full w-35" src="01-SppmAcgj (1).jpg"></img> Oslo</a>
                             <p className="opacity-75  text-center"> 1 hour 13 mins drive</p>
                         </div>
