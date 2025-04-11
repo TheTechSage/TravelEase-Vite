@@ -1,9 +1,8 @@
-import React from 'react'
 
 function List() {
   return (
     <div>
-      List
+      list
     </div>
   )
 }
