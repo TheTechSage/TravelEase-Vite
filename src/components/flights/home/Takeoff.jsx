@@ -13,6 +13,9 @@ import { FaArrowRightToBracket } from "react-icons/fa6";
 import { IoLocationOutline } from "react-icons/io5";
 import { FaStar } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { FaArrowRightArrowLeft } from "react-icons/fa6";
+import { FaRegCalendar } from "react-icons/fa";
+import { TbLocation } from "react-icons/tb";
 
 function Takeoff() {
     const [visible, setVisible] = useState(false);
@@ -127,38 +130,90 @@ function Takeoff() {
             <div className='px-20 py-20'>
                 <div className='w-full pl-20 pr-15 pt-4 pb-8 h-[600px] bg-[url(/flight.jpg)]'>
                     <h1 className='font-extrabold text-7xl absolute top-110 left-60 tracking-wider'>Ready to take off?</h1>
-                    <div className='w-full h-50 mt-75  left-10 bg-white'>
+                    <div className='w-full h-55 mt-75  left-10 bg-white'>
                         <div className='pt-5 pl-6 flex'>
-                            <button className='bg-gray-300 w-25 h-8  text-black  font-semibold '>one way</button>
-                            <button className='bg-black text-white w-25 h-8  font-semibold '>Round Trip</button>
-                            <div className='bg-gray-100 w-50 h-8 absolute right-90 rounded-md'>
-                                <div className='text-gray-500 pt-1'>
-                                    <form>
-                                        <div onClick={() => setVisible(!visible)} id="class" className="cursor-pointer px-4"> &gt;
-                                            <div className={`w-[200px] absolute top-0 left-0 ${visible ? "flex" : "hidden"} flex-col border px-2`}>
-                                                 
-                                                <p >Select Class </p>
-                                                <p >Economy</p>
-                                                <p >Premium Economy</p>
-                                                <p >Business</p>
-                                                <p >First Class</p>
-                                                <p >Select class</p>
-                                            </div>
+                            <button className='bg-gray-300 rounded-l-lg px-4 py-2 text-black  font-semibold '>one way</button>
+                            <button className='bg-black rounded-r-lg text-white  font-semibold px-4 py-2'>Round Trip</button>
+                            <div className='bg-gray-100 w-48 h-9 absolute left-165 rounded-md flex'>
+                                <div className='w-full text-gray-500 pt-1'>
+
+                                    <div onClick={() => setVisible(!visible)} id="class" className="flex items-center justify-between cursor-pointer px-4">
+                                        <p>Select Class</p>
+                                        <span className='pt-1 pl-2'><IoIosArrowDown /></span>
+
+                                        <div className={`z-50 bg-white w-[200px] absolute  top-0 left-0 ${visible ? "flex" : "hidden"} flex-col border px-2`}>
+                                            <form>
+                                                <input type="text"></input>
+
+                                                <p className='hover:bg-gray-200'>Select Class </p>
+                                                <p className='hover:bg-gray-200'>Economy</p>
+                                                <p className='hover:bg-gray-200'>Premium Economy</p>
+                                                <p className='hover:bg-gray-200'>Business</p>
+                                                <p className='hover:bg-gray-200'>First Class</p>
+                                                <p className='hover:bg-gray-200'>Select class</p>
+                                            </form>
                                         </div>
-                                    </form>
+                                    </div>
+
+                                </div>
+
+                                <div className='bg-gray-100 w-48 h-9 absolute left-55 rounded-md flex text-gray-500 pt-1'>
+                                    <div onClick={() => setVisible(!visible)} id="class" className="flex items-center justify-between cursor-pointer px-4">
+                                        <p>Select Travelers</p>
+                                        <span className='pt-1 pl-2'><IoIosArrowDown /></span>
+
+                                        <div className={`z-50 bg-white w-[200px] absolute  top-0 left-0 ${visible ? "flex" : "hidden"} flex-col border px-2`}>
+                                            <form>
+                                                <input type="text"></input>
+                                                <p className='hover:bg-gray-200'>1</p>
+                                                <p className='hover:bg-gray-200'>2</p>
+                                                <p className='hover:bg-gray-200'>3</p>
+                                                <p className='hover:bg-gray-200'>4</p>
+                                            </form>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
-                        <div className='bg-gray-100 w-50 h-20 relative left-5 top-6 rounded-md'>
-                            <p className='text-gray-400 pl-6 pt-3 flex'><IoLocationOutline size={20} />From </p>
+                        <div className='flex'>
+                            <div className='bg-gray-100 w-70 h-22 relative left-5 top-7 rounded-lg'>
+                                <p className='text-gray-600 pl-3 pt-2 text-sm flex'><IoLocationOutline size={20} />From </p>
+                                <div className='bg-white w-60 h-10 absolute left-5 top-9 rounded-lg'>
+
+                                </div>
+                            </div>
+
+                            <div className='absolute top-172 left-102'>
+                                <button className="cursor-pointer hover:bg-sky-50 bg-white rounded-full h-10 w-10 relative left-10 z-40"> <FaArrowRightArrowLeft size={26} className='pl-3' />
+                                </button>
+                            </div>
+
+
+                            <div className='bg-gray-100 w-70 h-22 relative left-11 top-7 rounded-lg'>
+                                <p className='text-gray-600 pl-3 gap-1 text-sm pt-2  flex'><TbLocation size={20} />To </p>
+                                <div className='bg-white w-60 h-10 absolute left-5 top-9 rounded-lg'>
+
+                                </div>
+                            </div>
+
+                            <div className='bg-gray-100 w-70 h-22 relative left-17 top-7 rounded-lg'>
+                                <p className='text-gray-600 pl-3 text-sm pt-2 gap-1 flex'><FaRegCalendar size={20} />Departure </p>
+                                <div className='bg-white w-60 h-10 absolute left-5 top-9 rounded-lg'>
+                                    <input className='p-2 cursor-pointer ' type="date" name="date" id="date" />
+                                </div>
+                            </div>
+
                         </div>
-                        <input className='p-4 ml-52' type="date" name="" id="" />
+
+
+
                     </div>
                 </div>
             </div>
 
-            <div className='absolute top-188 left-230'>
-                <button className='flex cursor-pointer hover:bg-sky-700 text-white rounded-lg p-1 px-6 bg-blue-700 font-semibold'>Find ticket<FaArrowRightLong size={19} className='pt-2 pl-2' /></button>
+            <div className='absolute top-193 left-230'>
+                <button className='flex cursor-pointer hover:bg-sky-700 text-white rounded-lg p-2 px-6 bg-blue-700 font-semibold'>Find ticket<FaArrowRightLong size={19} className='pt-2 pl-2' /></button>
             </div>
 
             <div className='relative left-40 font-bold text-3xl pt-0'>
@@ -307,21 +362,21 @@ function Takeoff() {
                             <img className='w-37 rounded-xl' src="public/02-HjfkwpD3.jpg"></img>
                             <div className='flex-col'>
                                 <p className='text-xl pt-8 px-5 hover:text-blue-800 cursor-pointer font-bold'>Story of Water World adventure</p>
-                                <p className='text-gray-500 px-6 pt-2'>Jacqueline Miller</p>
+                                <p className='text-gray-500 px-6 pt-2 cursor-pointer'>Jacqueline Miller</p>
                             </div>
                         </div>
                         <div className='pt-10 flex'>
                             <img className='w-37 rounded-xl' src="public/03-rK62pTNA.jpg"></img>
                             <div className='flex-col'>
                                 <p className='text-xl pt-8 px-5 hover:text-blue-800 cursor-pointer font-bold'>How Hotel Technology Can Help Small Hotel Businesses</p>
-                                <p className='text-gray-500 px-6 pt-2'>Frances Guerrero</p>
+                                <p className='text-gray-500 px-6 pt-2 cursor-pointer'>Frances Guerrero</p>
                             </div>
                         </div>
                         <div className='pt-10 flex'>
                             <img className='w-37 rounded-xl' src="public/04-VFGGPgDc.jpg"></img>
                             <div className='flex-col'>
                                 <p className='text-xl pt-8 px-5 hover:text-blue-800 cursor-pointer font-bold'>Hotel Service-Become a Guide for Your Guests</p>
-                                <p className='text-gray-500 px-6 pt-2'>Louis Ferguson</p>
+                                <p className='text-gray-500 px-6 pt-2 cursor-pointer'>Louis Ferguson</p>
                             </div>
                         </div>
                     </div>
