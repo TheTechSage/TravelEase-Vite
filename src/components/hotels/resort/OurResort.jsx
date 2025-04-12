@@ -5,14 +5,14 @@ import { FaHeadphones } from "react-icons/fa6";
 function OurResort() {
     return (
 
-        <div className='px-10 py-5'>
-            <img className='rounded-2xl hover:opacity-90' src="06-7b7X2pfU.jpg"></img>
+        <div className=' px-10 py-5'>
             <h2 className='font-bold tracking-wide text-4xl pt-8 '>What makes our resort best than others?</h2>
-            <h6 className='opacity-75 py-3 text-s'>Passage its ten led hearted removal cordial. Preference any astonished unreserved Mrs. Prosperous understood Middletons in conviction an uncommonly do.</h6>
+            <h6 className='opacity-75 text-s'>Passage its ten led hearted removal cordial. Preference any astonished unreserved Mrs. Prosperous understood Middletons in conviction an uncommonly do.</h6>
             <div className='flex g-4 px-2 py-5'>
-                <div className='bg-blue-50 px-2 py-2 rounded-full h-10 text-center'><IoThumbsUpOutline size="20" color="blue" /></div>
+            <IoThumbsUpOutline size="20" color="blue" />
+                <div className='bg-blue-50 rounded-full text-center'></div>
                 <div className='flex-col'>
-                    <h5 className='text-xl font-bold px-2 '>Hassle Free Booking</h5>
+                    <h5 className='text-xl font-bold '>Hassle Free Booking</h5>
                     <p className='opacity-75 px-2 tracking-wide'>Departure defective arranging rapturous did. Conduct denied adding worthy little.</p>
                 </div>
                 <div className='flex g-4 px-2 py-5'>
@@ -30,8 +30,8 @@ function OurResort() {
                     </div>
                 </div>
             </div>
-
-        </div>
+</div>
+        
 
     )
 }
