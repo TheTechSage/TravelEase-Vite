@@ -2,7 +2,9 @@
 function List() {
   return (
     <div>
-      list
+      <ul>
+        <li></li>
+      </ul>
     </div>
   )
 }
