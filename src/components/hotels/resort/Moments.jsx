@@ -7,6 +7,7 @@ import { FaArrowLeft } from "react-icons/fa";
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+
 function Moments() {
   return (
      <>
