@@ -1,6 +1,6 @@
 import React from 'react'
-import Home from './heroo/Home'
-function Heroo() {
+import Home from './hero/Home'
+function Hero() {
   return (
     <div>
      <Home /> 
@@ -8,4 +8,4 @@ function Heroo() {
   )
 }
 
-export default Heroo
+export default Hero
