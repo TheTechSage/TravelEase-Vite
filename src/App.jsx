@@ -3,15 +3,16 @@ import Header from './components/common/Header'
 import Footer from './components/common/Footer'
 import { Outlet } from 'react-router-dom'
 import Takeoff from './components/flights/home/Takeoff'
-import List from './components/flights/List'
+import FlightList from './components/flights/FlightsList'
+
 
 function App() {
   return (
     <> 
       <Header />
       <Outlet />
-      <Takeoff />
-      <List />
+       <Takeoff />  
+      {/* <FlightList /> */}
       <Footer />
       
     </>

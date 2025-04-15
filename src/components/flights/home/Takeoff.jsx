@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { RxCross2 } from "react-icons/rx";
 import { MdCardTravel } from "react-icons/md";
 import { IoIosArrowDown } from "react-icons/io";
@@ -23,20 +23,51 @@ function Takeoff() {
     const [from, setFrom] = useState(false);
     const [to, setTo] = useState(false);
 
+    
+    const fromRef = useRef(null);
+    const toRef = useRef(null);
+    const visibleRef = useRef(null);
+    const visibleSecondRef = useRef(null);
+
+    
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (fromRef.current && !fromRef.current.contains(event.target)) {
+                setFrom(false);
+            }
+            if (toRef.current && !toRef.current.contains(event.target)) {
+                setTo(false);
+            }
+            if (visibleRef.current && !visibleRef.current.contains(event.target)) {
+                setVisible(false);
+            }
+            if (visibleSecondRef.current && !visibleSecondRef.current.contains(event.target)) {
+                setVisibleSecond(false);
+            }
+        };
+
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
+
+
     return (
         <>
-            <div className='flex' >
-                <nav className='w-full bg-blue-500 h-10 flex items-center pl-45 text-white text-sm'>
+            <div className='flex  ' >
+                <div className='w-full gap-3  bg-blue-500 h-10 flex pl-40 items-center text-white text-sm'>
                     <h5>Traveling internationally?
                         Get update information on COVID-19 travel guidance and restrictions</h5>
-                    <div className='bg-black  rounded-md '>
-                        <button >Learn more!</button>
+                    <div className=' bg-black  rounded-md '>
+                        <button className=' ' >Learn more!</button>
                     </div>
-                    <div className='pl-90'>
+                    <div className='pl-0'>
                         <RxCross2 size={25} />
                     </div>
-                </nav>
+                </div>
             </div>
+
             <div className='flex pt-10 pl-50'>
                 <div className='hover:text-blue-600 cursor-pointer'>
                     <MdCardTravel size={25} />
@@ -122,10 +153,10 @@ function Takeoff() {
                 <div className='pl-20 flex gap-5 cursor-pointer'>
                     <FaCircleHalfStroke size={20} color='#ffa31a' />
                     <IoSearchOutline size={25} color="gray-200" />
-                    <div className='bg-blue-300 rounded-md text-sm w-20 h-6 
-                    relative  hover:bg-sky-600 hover:text-white mb-0'>
-                        <div className='absolute bottom-0 left-4 '>
-                            <button className='cursor-pointer gap-2' ><FaArrowRightToBracket className='absolute top-0 left-0 ' />sign Up </button>
+                    <div className='bg-blue-300 rounded-md text-sm w-22 p-1 
+                     hover:bg-sky-600 hover:text-white flex'>
+                        <div className='flex'>
+                            <button className='cursor-pointer flex gap-2'><FaArrowRightToBracket className='relative top-1' />sign Up </button>
                         </div>
                     </div>
                 </div>
@@ -142,7 +173,7 @@ function Takeoff() {
 
                                 <div className={`w-[200px] py-2 text-gray-500 rounded-t-lg border ${visible ? "border-b-1" : "border-transparent"}`}>
 
-                                    <div onClick={() => { setVisible(!visible) }} id="class" className=" px-1 relative flex items-center justify-between cursor-pointer ">
+                                    <div ref={visibleRef} onClick={() => { setVisible(!visible) }} id="class" className=" px-1 relative flex items-center justify-between cursor-pointer ">
                                         <p>Select Class</p>
                                         <span className='pt-1 pl-2'><IoIosArrowDown /></span>
 
@@ -165,7 +196,7 @@ function Takeoff() {
 
                                     <div className={`w-[200px]  text-gray-500 rounded-t-lg border ${visibleSecond ? "border-b-1" : "border-transparent"}`}>
 
-                                        <div onClick={() => { setVisibleSecond(!visibleSecond) }} id="class" className="px-1 relative flex justify-between cursor-pointer">
+                                        <div ref={visibleSecondRef} onClick={() => { setVisibleSecond(!visibleSecond) }} id="class" className="px-1 relative flex justify-between cursor-pointer">
 
                                             <p className='pt-1'>Select Travelers</p>
                                             <span className='pt-2 pl-2 '><IoIosArrowDown /></span>
@@ -188,16 +219,16 @@ function Takeoff() {
                             </div>
                         </div>
 
-                        <div className='flex gap-2'>
-                            <div className='bg-gray-100 w-70 rounded-lg  text-gray-500 relative left-4 top-4 cursor-pointer '>
+                        <div className='flex gap-4 relative top-4 left-4'>
+                            <div className='bg-gray-100 w-70 rounded-lg  text-gray-500  cursor-pointer '>
                                 <p className='text-gray-600 pl-2 pt-2 text-sm flex items-center'>
                                     <IoLocationOutline size={20} className="mr-1" /> From
                                 </p>
-                                <div onClick={() => setFrom(!from)} className={`w-60 px-2 py-3 relative left-2 top-0 bg-white flex-1/3 flex justify-between rounded-t-lg border border-b-0 ${from ? "":"border-transparent"}`}>
+                                <div ref={fromRef} onClick={() => setFrom(!from)} className={`w-60 px-2 py-3 relative left-2 top-0 bg-white flex-1/3 flex justify-between rounded-t-lg border border-b-0 ${from ? "" : "border-transparent"}`}>
                                     <p >Select Travelers</p>
                                     <IoIosArrowDown />
 
-                                <div className={`${from ? "flex" : "hidden"} absolute border top-10 left-0 flex-col bg-white w-60 rounded-b-lg `}>
+                                    <div className={`${from ? "flex" : "hidden"} absolute border top-10 left-0 flex-col bg-white w-60 rounded-b-lg `}>
                                         <input type="text" className="border-b-0 p-1 mb-1" />
                                         <ul className='p-1'>
                                             <li className='list-none hover:bg-gray-200'>select location</li>
@@ -211,21 +242,22 @@ function Takeoff() {
 
 
 
-                            <button className="cursor-pointer hover:bg-sky-50 bg-white rounded-full h-10 z-20 w-10 relative left-6 top-14 "> <FaArrowRightArrowLeft size={26} className='pl-3'/>
+                            <button className="cursor-pointer hover:bg-sky-50 bg-white rounded-full h-10  w-10 absolute top-7 left-66 "> <FaArrowRightArrowLeft size={26} className='pl-3' />
                             </button>
 
-                            <div className='flex relative top-4 flex-col py-3 bg-gray-100 rounded-lg'>
+                            
+                            <div className='bg-gray-100 w-70 rounded-lg  text-gray-500  cursor-pointer '>
                                 <div className='text-gray-500 pl-2 gap-1 text-sm z-30 flex'>
-                                    <TbLocation size={20} />To 
-                                </div>  
+                                    <TbLocation size={20} />To
+                                </div>
 
-                                <div className='mx-auto bg-gray-100 flex rounded-lg text-gray-500 cursor-pointer justify-between px-4 py-1'>  
+                                <div className='mx-auto bg-gray-100 flex rounded-lg text-gray-500 cursor-pointer justify-between px-4 py-1'>
                                     <div className={`top-14 left-0 `}>
-                                        <div onClick={() => setTo(!to)} className={`w-60 px-2 py-3 relative left-2 top-0 bg-white flex-1/3 flex justify-between rounded-t-lg border border-b-0 ${to ? "":"border-transparent"}`}>
+                                        <div ref={toRef} onClick={() => setTo(!to)} className={`w-60 px-2 py-3 relative left-2 top-0 bg-white flex-1/3 flex justify-between rounded-t-lg border border-b-0 ${to ? "" : "border-transparent"}`}>
                                             <div className='flex'>Select Travelers</div>
-                                            <span className='pt-1'><IoIosArrowDown /></span> 
+                                            <span className='pt-1'><IoIosArrowDown /></span>
                                             <div className={`${to ? "flex" : "hidden"} absolute top-10 left-0 flex-col items-center border bg-white w-full rounded-b-lg`}>
-                                               
+
                                                 <input type="text" className="w-full p-1 mb-1" />
                                                 <ul className='p-1 w-full'>
                                                     <li className='list-none hover:bg-gray-200'>select location</li>
@@ -238,11 +270,11 @@ function Takeoff() {
                                     </div>
                                 </div>
                             </div>
-                         
 
-                            <div className='bg-gray-100 relative top-4 w-70 p-3 rounded-lg'>
+
+                            <div className='bg-gray-100  w-70 p-3 rounded-lg'>
                                 <p className='text-gray-600 pl-3 text-sm  gap-1 flex'><FaRegCalendar size={20} />Departure </p>
-                                <div className='bg-white w-60 relative top-2 rounded-lg'>
+                                <div className='bg-white w-60 rounded-lg'>
                                     <input className='p-3 cursor-pointer ' type="date" name="date" id="date" />
                                 </div>
                             </div>
@@ -253,7 +285,7 @@ function Takeoff() {
 
                     </div>
                 </div>
-            </div >
+            </div>
 
             <div className='absolute top-193 left-230'>
                 <button className='flex cursor-pointer hover:bg-sky-700 text-white rounded-lg p-2 px-6 bg-blue-700 font-semibold'>Find ticket<FaArrowRightLong size={19} className='pt-2 pl-2' /></button>
