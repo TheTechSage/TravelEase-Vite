@@ -1,6 +1,7 @@
 import React from 'react'
 import { MdOutlinePhone,MdOutlineMailOutline,MdFlight } from "react-icons/md";
 import { FaFacebookSquare ,FaInstagram ,FaCar,FaGlobeAsia, FaHotel,FaTwitter ,FaLinkedin } from "react-icons/fa";
+
 function Footer() {
     return (
         <>
@@ -20,7 +21,7 @@ function Footer() {
 </div>
         <div>
         <h5 className="text-2xl text-white mb-3">Page</h5>
-        <div className="flex flex-col" >
+        <div className="flex-col" >
         <ul className="gap-5 opacity-75">
             <li className="text-white hover:text-blue-500 pb-2"><a href="#">About us</a></li>
             <li className="text-white hover:text-blue-500 pb-2"><a href="#">Contact us</a></li>
@@ -31,8 +32,8 @@ function Footer() {
     </div>
         <div>
             <h5 className=" text-white  text-2xl mb-3">Link</h5>
-            <div className="flex flex-col ">
-            <ul className="opacity-75">
+            <div className=" flex-col">
+            <ul className="opacity-75 gap-5">
                 <li className="text-white  hover:text-blue-500 pb-2"><a href="#">Signout</a></li>
                 <li className="text-white hover:text-blue-500 pb-2"><a href="#">Signin</a></li>
                 <li className="text-white  hover:text-blue-500 pb-2"><a href="#">Privacy Policy</a></li>
@@ -44,8 +45,8 @@ function Footer() {
     </div>
     <div>
      <h4 className="text-2xl text-white pb-3 ">Globel Site</h4>
-     <div className="flex flex-col">
-        <ul className="opacity-75">
+     <div className="flex-col">
+        <ul className="opacity-75 gap-5">
             <li className="text-white opacity-75 hover:text-blue-500 pb-2"><a href="#">India</a></li>
             <li className="text-white opacity-75 hover:text-blue-500 pb-2"><a href="#California">California</a></li>
             <li className="text-white hover:text-blue-500 opacity-75 pb-2"><a href="#indonasia">Indonasia</a></li>
@@ -54,9 +55,9 @@ function Footer() {
             </ul>
             </div>   
     </div>
-<div>
+<div className=''>
     <h3 className="text-2xl text-white pb-3">Booking</h3>
-    <div className="flex flex-col">
+    <div className="flex-col">
         <ul className="opacity-75 "> 
             <li className="text-white hover:text-blue-500 pb-2 gap-2 flex"><FaHotel size="20px" /><a href="#hotel">Hotel</a></li>
             <li className="text-white hover:text-blue-500 pb-2 gap-2 flex"><MdFlight size="20px" /><a href="#flight">Flight</a></li>
