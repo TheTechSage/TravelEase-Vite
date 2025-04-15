@@ -6,6 +6,7 @@ import { Outlet } from "react-router-dom";
 import Grid from "./components/hotels/Grid";
 import Hero from "./components/Hero";
 import Takeoff from "./components/flights/home/Takeoff";
+import List from "./components/flights/list/List";
 
 function App() {
   return (
@@ -16,7 +17,9 @@ function App() {
       <Grid />
       <Hero />
       <Takeoff />
+      <List />
       <Footer />
+      
     </>
   );
 }
