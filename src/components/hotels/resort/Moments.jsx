@@ -7,6 +7,7 @@ import { FaArrowLeft } from "react-icons/fa";
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+
 function Moments() {
   return (
      <>
@@ -17,10 +18,10 @@ function Moments() {
           <div className='relative flex gap-4 pb-60'>
           <div className='px-5 py-4'>
           
-        <img className='w-[70%] content-end rounded-2xl' src="05-avohIMq8.jpg"></img>
+        <img className='w-[70%] content-end rounded-2xl' src="05-avohIMq8.jpg"/>
         </div>
         <div className= "py-5">
-        <img className='h-[160%] rounded-xl' src="04-KW179Bm7.jpg"></img>
+        <img className='h-[160%] rounded-xl' src="04-KW179Bm7.jpg"/>
         </div>  
          </div>
         <div className="relative w-full py-8">
@@ -29,7 +30,7 @@ function Moments() {
               <FaArrowLeft className="text-xl text-white" />
             </div>
           </div>
-          <div className="absolute right-9 top-100 transform -translate-y-1/2 z-10">
+          <div className="absolute right-9 top-100  z-10">
             <div className="next-button bg-black p-2 rounded-full shadow cursor-pointer hover:bg-blue-500">
               <FaArrowRight className="text-xl text-white" />
             </div>
