@@ -5,6 +5,7 @@ import { Outlet } from 'react-router-dom'
 // import Resort from './components/hotels/Resort'
 import Grid from './components/hotels/Grid'
 import Hero from './components/Hero'
+import Takeoff from './components/flights/home/Takeoff'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       {/* <Resort /> */}
          <Grid />   
        <Hero />   
+      <Takeoff />
       <Footer />
     </>
   )
