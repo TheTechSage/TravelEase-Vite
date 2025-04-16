@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useRef, useState } from 'react'
 import { IoIosArrowDown } from "react-icons/io";
 import { IoLocationOutline } from "react-icons/io5";
