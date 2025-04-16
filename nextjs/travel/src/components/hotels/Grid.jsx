@@ -3,9 +3,9 @@ import NewYork from './grid/NewYork'
 
 function Grid() {
   return (
-    <>
+    <div>
     <NewYork />
-    </>
+    </div>
   )
 }
 

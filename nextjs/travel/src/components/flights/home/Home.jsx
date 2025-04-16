@@ -1,5 +1,5 @@
 import React from 'react'
-import Takeoff from './home/Takeoff'
+import Takeoff from './Takeoff'
 
 function Home() {
   return (

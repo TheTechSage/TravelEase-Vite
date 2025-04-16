@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
@@ -8,7 +9,7 @@ import { CiBookmark } from "react-icons/ci";
 import { FaRegCalendar } from "react-icons/fa";
 import { FaRegBookmark, FaBookmark } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
-import { Button } from "@/components/ui/button";
+import { Button } from "../../ui/button";
 import {
   Pagination,
   PaginationContent,
@@ -17,7 +18,7 @@ import {
   PaginationLink,
   PaginationNext,
   PaginationPrevious,
-} from "@/components/ui/pagination";
+} from "../../ui/pagination";
 const groupedCards = [
   [
     {
@@ -101,7 +102,6 @@ const groupedCards = [
 ];
 
 function NewYork() {
-  
   const [bookmarked, setBookmarked] = useState({});
 
   const toggleBookmark = (groupIndex, cardIndex) => {
@@ -120,7 +120,6 @@ function NewYork() {
 
   return (
     <>
-      
       <div className="w-full py-12 px-8 flex flex-col items-center">
         <div className="relative py-10 ">
           <img className="w-290 h-110 rounded-xl" src="05-4tYh3WRJ.jpg" />
