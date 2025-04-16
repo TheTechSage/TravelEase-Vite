@@ -1,5 +1,5 @@
 import React from 'react'
-import List from './list/List'
+import List from '../list/List'
 
 function FlightList() {
   return (
