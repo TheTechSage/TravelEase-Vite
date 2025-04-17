@@ -1,5 +1,5 @@
 import React from 'react'
-import NewYork from './grid/NewYork'
+import NewYork from '../../../components/hotels/grid/NewYork'
 
 function Grid() {
   return (

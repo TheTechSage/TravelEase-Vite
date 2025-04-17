@@ -84,7 +84,7 @@ const groupedCards = [
     },
     {
       id: 8,
-      image: "03-vKmVhHE6.jpg",
+      image: "hotel-grid-08.jpg",
       title: "Pride moon Village Resort & Spa",
       rating: 3.8,
       price: 896,
@@ -92,7 +92,7 @@ const groupedCards = [
     },
     {
       id: 9,
-      image: "01-6PVBScu5.jpg",
+      image: "hotel-grid-09.jpg",
       title: "Carina Beach Resort",
       rating: 4,
       price: 475,

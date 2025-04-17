@@ -26,14 +26,14 @@ export default function Hero() {
                     <IoLocationOutline size="40" />
                     </div>
                     <div>
-                      <label class="form-level">Location</label>
+                      <label className="form-level">Location</label>
                       <input type="location" placeholder='Select Location'></input>
                       </div>
                       <div>
                     <CiCalendar  size="40"/>
                     </div>
                     <div>
-                      <label class="form-level">Check in -out</label>
+                      <label className="form-level">Check in -out</label>
                     </div>
                     <input type="date-time-local"placeholder="Current time"></input>
                        <div>
