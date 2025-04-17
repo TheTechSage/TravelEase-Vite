@@ -10,6 +10,7 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 import Link from "next/link";
+import Image from "next/image";
 function Footer() {
   return (
     <>
@@ -17,7 +18,13 @@ function Footer() {
         <div className="container flex gap-20 pl-15 pr-15">
           <div className="flex flex-col text-white">
             <div className="pl-2">
-              <img className="h-10 " src="logo-light-q8SM9mVG.svg"></img>
+              <Image
+                className="w-10 "
+                src="/logo-white.svg"
+                alt="logo"
+                width={300}
+                height={300}
+              />
             </div>
             <div className="opacity-75  ">
               <p>
@@ -203,10 +210,34 @@ function Footer() {
           <div>
             <h3 className="text-2xl text-white">Payment & Security</h3>
             <div className="flex gap-2 py-3">
-              <img className="h-8" src="paypal-p0Cf0jrR.svg"></img>
-              <img className="h-8" src="download.svg"></img>
-              <img className="h-8" src="mastercard-7AdMRYoz.svg"></img>
-              <img className="h-8" src="expresscard-lzb9gcWA.svg"></img>
+              <Image
+                className="w-8"
+                src="/paypal-p0Cf0jrR.svg"
+                alt="paypal"
+                width={200}
+                height={200}
+              />
+              <Image
+                className="w-8"
+                src="/download.svg"
+                alt="visa"
+                width={200}
+                height={200}
+              />
+              <Image
+                className="h-8"
+                src="/mastercard-7AdMRYoz.svg"
+                alt="mastercard"
+                width={200}
+                height={200}
+              />
+              <Image
+                className="w-8"
+                src="/expresscard-lzb9gcWA.svg"
+                alt="express card"
+                width={200}
+                height={200}
+              />
             </div>
           </div>
           <div>

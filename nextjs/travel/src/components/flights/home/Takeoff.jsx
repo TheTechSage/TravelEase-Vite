@@ -507,7 +507,7 @@ function Takeoff() {
       <div className="justify-items-center font-bold text-5xl ">
         <p>Popular Destinations</p>
       </div>
-      <div class="flex py-10 pl-25 pr-20 cursor-pointer">
+      <div className="flex py-10 pl-25 pr-20 cursor-pointer">
         <div>
           <img
             className="w-[90%] rounded-lg transition-transform duration-500 ease in out transform hover:scale-105"
@@ -515,7 +515,7 @@ function Takeoff() {
           ></img>
           <div className="flex">
             <p className="font-bold text-xl pl-1 pt-3 ">Thailand</p>
-            <p class="font-bold text-md pl-25 pt-4 flex">
+            <p className="font-bold text-md pl-25 pt-4 flex">
               4.3
               <FaStar size={18} color="yellow" />
             </p>
@@ -531,7 +531,7 @@ function Takeoff() {
           ></img>
           <div className="flex">
             <p className="font-bold text-xl pl-1 pt-3 ">Hong Kong</p>
-            <p class="font-bold text-md pl-25 pt-4 flex">
+            <p className="font-bold text-md pl-25 pt-4 flex">
               4.3
               <FaStar size={18} color="yellow" />
             </p>
@@ -546,7 +546,7 @@ function Takeoff() {
           ></img>
           <div className="flex">
             <p className="font-bold text-xl pl-1 pt-3 ">Maldives</p>
-            <p class="font-bold text-md pl-25 pt-4 flex">
+            <p className="font-bold text-md pl-25 pt-4 flex">
               4.3
               <FaStar size={18} color="yellow" />
             </p>
@@ -561,7 +561,7 @@ function Takeoff() {
           ></img>
           <div className="flex">
             <p className="font-bold text-xl pl-1 pt-3">Switzerland</p>
-            <p class="font-bold text-md pl-25 pt-3 flex">
+            <p className="font-bold text-md pl-25 pt-3 flex">
               4.3
               <FaStar size={18} color="yellow" />
             </p>
