@@ -4,20 +4,21 @@ import Footer from "./components/common/Footer";
 import { Outlet } from "react-router-dom";
 // import Resort from './components/hotels/Resort'
 import Grid from "./components/hotels/Grid";
-import Hero from "./components/Hero";
 import Takeoff from "./components/flights/home/Takeoff";
 import List from "./components/flights/list/List";
+import ListHotels from "./components/hotels/ListHotels";
 
 function App() {
   return (
     <>
       <Header />
       <Outlet />
-      {/* <Resort /> */}
-      <Grid />
-      <Hero />
-      <Takeoff />
-      <List />
+      {/* <Resort /> 
+       <Grid /> */}
+      
+      <ListHotels />
+      {/* <Takeoff /> 
+      <List /> */}
       <Footer />
       
     </>
