@@ -14,9 +14,9 @@ function App() {
       <Header />
       <Outlet />
       {/* <Resort /> */}
-      <Grid />
-      <Hero />
-      <Takeoff />
+      {/* <Grid /> */}
+      {/* <Hero /> */}
+      {/* <Takeoff /> */}
       <List />
       <Footer />
       
