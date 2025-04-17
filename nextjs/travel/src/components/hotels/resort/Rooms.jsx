@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
@@ -40,7 +42,7 @@ function Rooms() {
 
         <SwiperSlide><img className='rounded-2xl px-20 py-10 w[50%] h-[50%]' src="01-jSTiCU9K.jpg" />
           <div className=' absolute top-[40%] left-[50%] bg-white border-2 w-[35%] rounded-xl text-center  border-white px-5 py-10'>
-            <h2 class="text-3xl  tracking-wide font-bold">One Bedroom Ocean Suit</h2>
+            <h2 className="text-3xl  tracking-wide font-bold">One Bedroom Ocean Suit</h2>
             <p>847-900 SQ.Ft</p>
             <p className='tracking-wide py-2'>Lively use looked latter regard had. We understand that theory is important to build a solid foundation</p>
             <ul className=' flex gap-5 py-2 px-4 text-center'>
@@ -53,7 +55,7 @@ function Rooms() {
         </SwiperSlide>
         <SwiperSlide><img className='rounded-2xl px-20 py-10 w[50%] h-[50%]' src="02-DyCMiWd4.jpg" />
           <div className=' absolute top-[40%] left-[50%] bg-white border-2 w-[35%] rounded-xl text-center  border-white px-5 py-10'>
-            <h2 class="text-3xl  tracking-wide font-bold">The Penthouse Suite</h2>
+            <h2 className="text-3xl  tracking-wide font-bold">The Penthouse Suite</h2>
             <p>789-850 SQ.Ft</p>
             <p className='tracking-wide py-2'>Lively use looked latter regard had. We understand that theory is important to build a solid foundation</p>
             <ul className=' flex gap-5 py-2 px-4 text-center'>
@@ -68,7 +70,7 @@ function Rooms() {
           <div>
             <img className='rounded-2xl px-20 py-10 w[50%] h-[50%]' src="03-PUAwOsNf.jpg" />
             <div className=' absolute top-[40%] left-[50%] bg-white border-2 w-[35%] rounded-xl text-center  border-white px-5 py-10'>
-              <h2 class="text-3xl  tracking-wide font-bold">The Entertainment Suite</h2>
+              <h2 className="text-3xl  tracking-wide font-bold">The Entertainment Suite</h2>
               <p>847-900 SQ.Ft</p>
               <p className='tracking-wide py-2'>Lively use looked latter regard had. We understand that theory is important to build a solid foundation</p>
               <ul className=' flex gap-5 py-2 px-4 text-center'>

@@ -8,7 +8,7 @@ function Offers() {
               <div className='px-20 py-10'>
                 <img className='rounded-2xl' src="02-DyCMiWd4.jpg"></img>
                 <div className=' absolute top-[40%] left-[50%] bg-white border-2 w-[35%] rounded-xl text-center  border-white px-5 py-10'>
-                  <h2 class="text-3xl  tracking-wide font-bold">The Entertainment Suite</h2>
+                  <h2 className="text-3xl  tracking-wide font-bold">The Entertainment Suite</h2>
                   <p>847-900 SQ.Ft</p>
                   <p className='tracking-wide py-2'>Lively use looked latter regard had. We understand that theory is important to build a solid foundation</p>
                   <ul className=' flex gap-5 py-2 px-4 text-center'>

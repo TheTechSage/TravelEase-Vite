@@ -18,12 +18,19 @@ import { IoSunnyOutline } from "react-icons/io5";
 import { TbMoonStars } from "react-icons/tb";
 import { FaCircleHalfStroke } from "react-icons/fa6";
 import Link from "next/link";
+import Image from "next/image";
 export default function Header() {
   return (
     <div>
       <div className="flex">
         <div>
-          <img className="h-18 pl-18 pt-8" src="logo-XeOrDTLq.svg"></img>
+          <Image
+            width={200}
+            height={200}
+            className="h-18 pl-18 pt-8"
+            src="/logo.svg"
+            alt="logo"
+          />
         </div>
 
         <div className="flex pt-10 pl-12 gap-8 font-arial">
@@ -232,16 +239,22 @@ export default function Header() {
           </div>
         </div>
         <div className="group relative">
-          <img
+          <Image
+            width={200}
+            height={200}
             className="w-10 h-10 rounded-lg relative top-5 left-5
                 cursor-pointer "
-            src="logo02.jpg"
-          ></img>
+            src="/logo02.jpg"
+            alt="profile pic"
+          />
           <div className="absolute hidden text-gray-700 group-hover:block border-none bg-white rounded-lg shadow-lg w-65 h-80 top-18 right-0">
-            <img
+            <Image
+              width={200}
+              height={200}
               className="rounded-full w-10 h-10 relative top-5 left-5"
-              src="logo02.jpg"
-            ></img>
+              src="/logo02.jpg"
+              alt="profile pic"
+            />
             <span className="absolute top-5 left-20 font-bold">
               Lori Ferguson
             </span>
@@ -286,4 +299,3 @@ export default function Header() {
     </div>
   );
 }
-
