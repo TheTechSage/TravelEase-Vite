@@ -11,10 +11,10 @@ function App() {
     <>
       <Header />
       <Outlet />
-    
+
       <List />
       <ListHotels />
-    
+
       <Footer />
       
     </>
