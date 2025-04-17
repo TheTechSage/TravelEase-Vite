@@ -23,7 +23,7 @@ export default function Hero(){
             </div>
              </div>
              <div className="pl-20 pt-5 flex">
-            <div className="w-200 p-40 border border-gray-400 rounded-lg">
+            <div className="w-200 p-60 border border-gray-400 rounded-lg">
             <div className="flex">
             <p className="absolute top-58 left-24 text-gray-500 font-semibold tracking-wide">Travel Class: </p>
             <p className="absolute top-58 left-48 font-semibold tracking-wide">Economy</p>
@@ -56,9 +56,6 @@ export default function Hero(){
             <p className="pt-2">Terminal - 2E, Gate - 3</p>
            </div>
            </div>
-            </div>
-            <div >
-          
             </div>
             </div>
             </div>
