@@ -38,10 +38,10 @@ export default function Vahicals() {
       <p className="text-5xl font-bold text-center py-4">
         Our Awesome Vehicles
       </p>
-      <div className="flex gap-4 justify-center py-4">
+      <div className="flex gap-8 justify-center py-4">
         {data.map((item, index) => (
-          <div key={index} className="h-60 w-40 flex flex-col gap-2 items-center bg-gray-900 text-white p-4 rounded-xl">
-            <Image src={item.icon} alt="vahical" width={400} height={400} className="bg-gray-700 rounded-full p-4 h-32"/>
+          <div key={index} className="h-60 w-40 flex flex-col gap-2 items-center shadow-xl text-white p-4 rounded-xl">
+            <Image src={item.icon} alt="vahical" width={400} height={400} className="bg-gray-200 rounded-full p-4 h-32"/>
             <p className="text-2xl font-bold">{item.title}</p>
             <p className="text-gray-400">{item.seat}</p>
           </div>
