@@ -40,7 +40,7 @@ export default function ChooseUs() {
       <p className="text-5xl font-bold text-center my-10">Why Choose Us</p>
       <div className="flex justify-between flex-wrap px-40 gap-4 py-2 mb-10">
         {data.map((item, index) => (
-          <div className="w-[32%] shadow-xl p-8 rounded-2xl">
+          <div key={index} className="w-[32%] shadow-xl p-8 rounded-2xl">
             {item.icon}
             <p className="text-2xl font-bold py-3">{item.title}</p>
             <p className="pr-5 text-gray-500">{item.para}</p>

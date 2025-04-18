@@ -59,7 +59,7 @@ export default function SearchCab() {
         alt="Cab"
         width={1200}
         height={900}
-        className="p-2 rounded"
+        className=" rounded-xl"
       />
     </div>
   );
