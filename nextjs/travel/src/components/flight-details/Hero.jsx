@@ -158,50 +158,7 @@ export default function Hero() {
    </div>
     </div>
     </div>
-    <div className=" px-30 pt-8 ">
-        <div className="w-190 border h-130 rounded-xl p-4 ">
-        <div>
-      <p className="text-4xl font-bold">Traveler Details</p>
-    </div>
-   <div className="pt-4 w-full">
-   <hr></hr>
-   </div>
-   <div className="pt-4">
-   <div className="w-full p-3 bg-red-50 rounded-md flex gap-2">
-          <p className="bg-red-700 w-10 border rounded-md text-center text-xs text-white ">New</p>
-          <p className="text-sm">Please make sure you enter the Name as per your passport</p>
-          </div>
-          </div>
-      <div className="flex justify-end pt-4">
-        <button className="bg-gray-100 cursor-pointer hover:bg-blue-800 hover:text-white rounded-lg px-6 py-3 text-sm font-bold text-blue-700 tracking-wide">Add New Adult</button>
-      </div>
-      <div className="pt-4">
-   <div className="w-full p-3 bg-gray-100 cursor-pointer rounded-t-lg flex gap-2">
-    <p className="font-semibold ">Adult 1</p>
-    </div>
-    <div className="">
-     <div className="pt-4 pl-3 flex">
-    <p className="text-md text-gray-400">Title</p>
-    <div className="text-gray-400 pl-25">
-    <p>Full Name</p>
-    <form className="border border-gray-400 w-140 p-2 rounded-lg flex items-center">
-  <input type="text" placeholder="First Name" />
-  <input type="text" placeholder="Last Name"/>
-  </form>
-     </div>
-     </div> 
-     <div className="text-gray-400 text-md pl-2 pt-5 flex">
-      <p>Date Of Birth</p> 
-     </div>
-     <p className="pl-2 text-gray-400">Passport  Number</p>
-     {/* <div className="border border-gray-400 w-70 p-4 rounded-lg pt-2 pl-2"> */}
-     <form className="border border-gray-400 w-70 p-4 rounded-lg pt-2 pl-2">
-      <input type="text" placeholder="Enter Passport number"/>
-     </form >
-     </div>
-     </div>
-          </div>
-        </div>
+    
     </div>
 
   )
